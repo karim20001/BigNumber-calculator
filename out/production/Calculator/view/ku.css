@@ -1,0 +1,5 @@
+.text-area {
+	-fx-text-fill: #eeeeee;
+	-fx-font-size: 16px;
+	-fx-border-color: black;
+}

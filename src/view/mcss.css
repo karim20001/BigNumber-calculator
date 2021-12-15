@@ -1,0 +1,10 @@
+
+.text-area .content{
+	-fx-background-color: #212121;
+}
+.text-area {
+	-fx-text-fill: #eeeeee;
+	-fx-font-size: 16px;
+	-fx-display-caret: true;
+
+}

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="443.0" prefWidth="261.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CalculatorController">
+    <children>
+        <GridPane alignment="BOTTOM_LEFT" focusTraversable="true" layoutY="237.0" prefHeight="200.0" prefWidth="261.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="243.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Button id="BTN6" fx:id="BTN6" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="40.0" prefWidth="75.0" style="-fx-background-color: black; -fx-background-radius: 0;" text="6" textFill="#eeeeee" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+                <Button id="BTN9" fx:id="BTN9" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="40.0" prefWidth="75.0" style="-fx-background-color: black; -fx-background-radius: 0;" text="9" textFill="#eeeeee" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+                <Button id="BTNtavan" fx:id="BTPow" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="40.0" prefWidth="75.0" style="-fx-background-color: black; -fx-background-radius: 0;" text="xʸ" textFill="#ff8400" GridPane.columnIndex="2">
+                    <font>
+                        <Font name="Italic" size="18.0" />
+                    </font>
+                </Button>
+                <Button id="BTNcos" fx:id="BTNcos" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="40.0" prefWidth="75.0" style="-fx-background-color: black; -fx-background-radius: 0;" text="cos" textFill="#ff8400" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+                <Button id="BTN3" fx:id="BTN3" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="40.0" prefWidth="75.0" style="-fx-background-color: black; -fx-background-radius: 0;" text="3" textFill="#eeeeee" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+                <Button id="BTNmulti" fx:id="BTMulti" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="40.0" prefWidth="75.0" style="-fx-background-color: black; -fx-background-radius: 0;" text="x" textFill="#ff8400" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+                <Button id="BTNequal" fx:id="BTEqual" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="40.0" prefWidth="75.0" style="-fx-background-color: black; -fx-background-radius: 0;" text="=" textFill="#36d7ff" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+                <Button id="BTNpos" fx:id="BTPositive" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="40.0" prefWidth="75.0" style="-fx-background-color: black; -fx-background-radius: 0;" text="+" textFill="#ff8400" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+                <Button id="BTNmin" fx:id="BTMinus" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="40.0" prefWidth="75.0" style="-fx-background-color: black; -fx-background-radius: 0;" text="-" textFill="#ff8400" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+                <Button id="BTNdiv" fx:id="BTDiv" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="40.0" prefWidth="75.0" style="-fx-background-color: black; -fx-background-radius: 0;" text="÷" textFill="#ff8400" GridPane.columnIndex="3">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+                <Button id="BTN2" fx:id="BTN2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="40.0" prefWidth="75.0" style="-fx-background-color: black; -fx-background-radius: 0;" text="2" textFill="#eeeeee" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+                <Button id="BTN8" fx:id="BTN8" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="40.0" prefWidth="75.0" style="-fx-background-color: black; -fx-background-radius: 0;" text="8" textFill="#eeeeee" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+                <Button id="BTNfact" fx:id="BTFact" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="40.0" prefWidth="75.0" style="-fx-background-color: black; -fx-background-radius: 0;" text="n!" textFill="#ff8400" GridPane.columnIndex="1">
+                    <font>
+                        <Font name="Italic" size="18.0" />
+                    </font>
+                </Button>
+                <Button id="BTN0" fx:id="BTN0" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="40.0" prefWidth="75.0" style="-fx-background-color: black; -fx-background-radius: 0;" text="0" textFill="#eeeeee" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+                <Button id="BTN5" fx:id="BTN5" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="40.0" prefWidth="75.0" style="-fx-background-color: black; -fx-background-radius: 0;" text="5" textFill="#eeeeee" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+                <Button id="BTN1" fx:id="BTN1" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="40.0" prefWidth="75.0" style="-fx-background-color: black; -fx-background-radius: 0;" text="1" textFill="#eeeeee" GridPane.rowIndex="3">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+                <Button id="BTNsin" fx:id="BTSin" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="40.0" prefWidth="75.0" style="-fx-background-color: black; -fx-background-radius: 0;" text="sin" textFill="#ff8400" GridPane.rowIndex="4">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+                <Button id="BTN4" fx:id="BTN4" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="40.0" prefWidth="75.0" style="-fx-background-color: black; -fx-background-radius: 0;" text="4" textFill="#eeeeee" GridPane.rowIndex="2">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+                <Button id="BTNclear" fx:id="BTClear" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="40.0" prefWidth="75.0" style="-fx-background-color: black; -fx-background-radius: 0;" text="c" textFill="#ff8400">
+                    <font>
+                        <Font name="Italic" size="20.0" />
+                    </font>
+                </Button>
+                <Button id="BTN7" fx:id="BTN7" layoutX="10.0" layoutY="10.0" maxHeight="80.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="40.0" prefWidth="75.0" style="-fx-background-color: black; -fx-background-radius: 0;" text="7" textFill="#eeeeee" GridPane.rowIndex="1">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+            </children>
+        </GridPane>
+        <Button id="BTNintegral" fx:id="BTIntegral" alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="14.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="62.0" prefWidth="66.0" style="-fx-background-color: black;" text="∫" textFill="#0dff00">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Button>
+        <GridPane layoutX="18.0" layoutY="132.0" prefHeight="90.0" prefWidth="225.0" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="132.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <TextArea id="area1" fx:id="area1" prefHeight="38.0" prefWidth="227.0" stylesheets="@mcss.css" GridPane.rowIndex="1">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </TextArea>
+                <TextArea id="area2" fx:id="area2" editable="false" prefHeight="40.0" prefWidth="225.0" stylesheets="@mcss.css" visible="false" />
+            </children>
+        </GridPane>
+    </children>
+</AnchorPane>
